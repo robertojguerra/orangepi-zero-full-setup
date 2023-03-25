@@ -37,6 +37,8 @@
 
 * Run this OS in the OrangePi Zero, to make sure you have a good OS building system. Test that you can login with SSH.
 
+* Congratulations! Now you have your own standard Armbian OS, which you built yourself!
+
 <h2>7.3 Add the TV encoder driver to the Linux kernel source</h2>
 
 * Download these patches:
@@ -50,9 +52,11 @@
 
 * Move them to ~/armbian-2023.05/build/userpatches/kernel/archives/sunxi-6.1
 
-* Run ./compile.sh again. In the "TUI", ask to change kernel configuration. Continue with the other configurations as before.
+* Run ./compile.sh again. In the "TUI", <b>ask to CHANGE KERNEL CONFIGURATION</b>. Continue with the rest of configurations as before.
 
 * In Kernel Config, go to "device drivers", "graphics support", find "lima" and select it
+
+*insert photos of kernelconfig screens*
 
 * Since you have new user patches and new kernel module selected, the armbian script will download *_THE LINUX KERNEL SOURCE VERSION 6.1_* This may take 1 hour.
 
@@ -66,7 +70,7 @@
 
 * You will end up with a ...img.xz file. Write it on the microSD with Balena Etcher.
 
-<h2> 7.4 First time with your OWN Armbian OS 🤟</h2>
+<h2> 7.4 First time with your OWN Armbian OS, with your OWN changes 🤟</h2>
 
 * Test it in the OrangePi Zero. Repeat the same account configuration as the first time, though serial or SSH.
 
