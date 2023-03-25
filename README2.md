@@ -101,7 +101,7 @@
  
 <img width=600 src="https://user-images.githubusercontent.com/3515329/227740473-d12702c1-3443-42aa-af1f-1463249d3807.png">
 
-* Notice that the previous step has added "tve" at the right side of "usbhost3". This is the place where we tell the bootloader "Uboot" to insert the "dtbos" (device tree binary overlays) in the "dtb", before running the Linux kernel, so that it knows where the new hardware it (bus and addresses).
+* Notice that the previous step has added "tve" at the right side of "usbhost3". This is the place where we tell the bootloader "Uboot" to insert the "dtbos" (device tree binary overlays) in the "dtb", before running the Linux kernel, so that it knows where the new hardware is (bus and addresses).
 
 <h2> 7.5 You will need a new video cable </h2>
 
