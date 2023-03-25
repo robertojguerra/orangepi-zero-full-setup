@@ -16,14 +16,14 @@ Contents
 <H1>1. Get your hardware :)</H1>
 
 <p float="left">
-<img width=300 src="https://user-images.githubusercontent.com/3515329/227690645-c09604de-25f1-4790-aaf6-da139cda9219.png" />
-<img width=400 src="https://user-images.githubusercontent.com/3515329/227690554-845e365b-dbbe-42bf-8b02-f3ec1da0d3d3.png" />
-<img width=300 src="https://user-images.githubusercontent.com/3515329/227691726-dd3f12f7-fad9-4eb5-9e47-4e8c6020b8bc.png" />
+<img width=250 src="https://user-images.githubusercontent.com/3515329/227690645-c09604de-25f1-4790-aaf6-da139cda9219.png" />
+<img width=500 src="https://user-images.githubusercontent.com/3515329/227690554-845e365b-dbbe-42bf-8b02-f3ec1da0d3d3.png" />
+<img width=250 src="https://user-images.githubusercontent.com/3515329/227691726-dd3f12f7-fad9-4eb5-9e47-4e8c6020b8bc.png" />
 </p>
 
 <p float="left">
-<img width=300 src="https://user-images.githubusercontent.com/3515329/227691083-cb2ad85b-2124-4a5e-9fd1-5fc7d331b45f.png" />
-<img width=400 src="https://user-images.githubusercontent.com/3515329/227697165-1cceb21c-1e4d-49fd-9c9e-d236038d5b8b.png">
+<img width=250 src="https://user-images.githubusercontent.com/3515329/227691083-cb2ad85b-2124-4a5e-9fd1-5fc7d331b45f.png" />
+<img width=500 src="https://user-images.githubusercontent.com/3515329/227697165-1cceb21c-1e4d-49fd-9c9e-d236038d5b8b.png">
 </p>
 
 Note: USB charger should be 1.0 amp or greater
