@@ -75,9 +75,15 @@ Duplicate it in the same folder without the ".template". Look at the instruction
 
 Insert the microSD card in the OrangePi Zero
 
+
+<H1>3. Start interfacing with your OrangePi Zero</H1>
+<H2>3.1 Serial (most reliable)</H2>
 Connect the USB-serial adapter in the OrangePi Zero and your laptop.
+
 <img width=400 src="https://user-images.githubusercontent.com/3515329/227698605-c79c2747-7a31-4553-9a1d-e3c4891726a1.png">
 
 In your laptop download and run Putty (Windows) or Screen (Linux). The serial settings are 115200,8N1. The serial port *MAY* be COM3 or /dev/ttyUSB0
 
-Connect the USB cable to the charger and to the OrangePi Zero microUSB port.
+In Linux, run "screen /dev/ttyUSB0 115200"
+
+Connect the USB cable to the charger and to the OrangePi Zero microUSB port. You should see the booting text messages in the Putty or screen window
