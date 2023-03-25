@@ -160,4 +160,4 @@ And here is the case that I designed, if you like fast and light prints, with sh
 
 *coming soon*
 
-<h1>Parts 7 to 12 in Part 2... coming soon :scream: :rocket:</H1>
+<h1>Parts 7 to 12 in Part 2... <a href=README2.md>GO! :scream: :rocket:</a></H1>
