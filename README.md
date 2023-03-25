@@ -116,7 +116,10 @@ Also, you can create "locales" if you want Linux in another language. For simpli
 
 Log out the root user by typing "exit". Login again as your normal user (it is safer to only use "root" only when necessary).
 
+If you want to change the network or Wifi settings, type "sudo nmtui" (superuser do Network Manager Text User Interface).
+
 <H1>4. USB Ports</H1>
+
 There is 1 type A USB port ready to USE. Let's check that it works.
 
 With no USB devices connected, type "lsusb". Look at the result.
@@ -128,3 +131,11 @@ Plug in one device, or more with a USB hub.
 Notice in my case: one hub, one keyboard, one mouse and one webcam.
 
 The values are the USB bus, device, the VID:PID, and the device name.
+
+The nice thing about the OrangePi Zero is that there is a lot of functionality in the metal pins. If you use jumper wires, you can get 2 more USB ports:
+
+<img width=500 src="https://user-images.githubusercontent.com/3515329/227700485-48298e69-502a-4772-87a7-34a294f407b0.png">
+
+<usb cable photo here>
+
+Also, if you get a USB OTG (on-the-go) cable, you can use the microUSB as a 4th USB port (you need to power the OrangePi through the metal pins)
