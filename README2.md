@@ -2,6 +2,7 @@
 
 <h1>7. Building your own system</h1>
 <h2>7.1 Create a Linux virtual machine</h2>
+
 * Download and install VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
 * Download a Server Ubuntu "Jammy Jellyfish" system: https://releases.ubuntu.com/jammy/
@@ -13,6 +14,7 @@
 * Login as a regular user, find its IP with "ip a", and login through SSH
 
 <h2>7.2 Download the Armbian OS building script from Github</h2>
+
 * mkdir armbian-2023.05
 
 * cd armbian-2023.05
@@ -39,11 +41,11 @@
 
 * Download these patches:
 
-** 0036-....patch : makes additions to the "dts", which tells the kernel where are the new devices. Adds kernel code to interact with the tv encoder. With my modifications to be applicable to Armbian (the patch came from the LibreElec github)
+  * 0036-....patch : makes additions to the "dts", which tells the kernel where are the new devices. Adds kernel code to interact with the tv encoder. With my modifications to be applicable to Armbian (the patch came from the LibreElec github)
 
-** zzzz2-....patch : by Armbian user "gleam2003", adds directives to make sure that the dtbo (device tree binary overlay) is compiled
+  * zzzz2-....patch : by Armbian user "gleam2003", adds directives to make sure that the dtbo (device tree binary overlay) is compiled
 
-** zzzz3-....patch : more additions to the "dts" and "dtsi" (like C include files), which I noticed were missing from the LibreElec patch
+  * zzzz3-....patch : more additions to the "dts" and "dtsi" (like C include files), which I noticed were missing from the LibreElec patch
 
 * Move them to ~/armbian-2023.05/build/userpatches/kernel/archives/sunxi-6.1
 
