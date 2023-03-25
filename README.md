@@ -99,7 +99,7 @@ Look for "orangepizero.local" or "orangepizero.lan" and take note of the IPv4 ad
 
 From your laptop's command line, connect via SSH protocol: "ssh root@192.168.1.xxx"
 
-<img width 400 src="https://user-images.githubusercontent.com/3515329/227699355-08315062-b82b-4683-a1c5-600dd89a6979.png">
+<img width=400 src="https://user-images.githubusercontent.com/3515329/227702326-f2a6eac0-c697-4f20-be45-7f4aee0f4dda.png">
 
 Press Y to accept the SSH connection for the first time to this SSH server (the OrangePi Zero). This step ensures that no other device pretends to be this OrangePi Zero in the future.
 
