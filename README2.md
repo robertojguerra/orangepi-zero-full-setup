@@ -5,13 +5,20 @@
 
 * Download and install VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
-* Download a Server Ubuntu "Jammy Jellyfish" system: https://releases.ubuntu.com/jammy/
+* Download a Server Ubuntu "Jammy Jellyfish" system: https://releases.ubuntu.com/jammy/ (recommended compilation OS on March 2023)
 
 * Create a virtual machine with 1 GB RAM and "bridged networking"
 
-* Start the VM, install Ubuntu.
+* Start the VM, install Ubuntu Jammy Jellyfish.
 
-* Login as a regular user, find its IP with "ip a", and login through SSH
+<img width=600 src="https://user-images.githubusercontent.com/3515329/227738861-54c57422-7d6b-4c90-95f4-d84e4d5936b3.png">
+
+* Login as a regular user: find its IP with "ip a", and from Putty or Linux terminal, connect with SSH
+
+<p>
+<img width=600 src="https://user-images.githubusercontent.com/3515329/227739034-d7d1b334-622b-4b24-8ce8-aba7292baa07.png">
+<img width=400 src="https://user-images.githubusercontent.com/3515329/227739119-a6a0d731-ab1e-4f89-b2e8-2eab8b38ed81.png">
+</p>
 
 <h2>7.2 Download the Armbian OS building script from Github</h2>
 
