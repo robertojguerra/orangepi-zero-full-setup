@@ -104,7 +104,7 @@ From your laptop's command line, connect via SSH protocol: "ssh root@192.168.1.x
 Press Y to accept the SSH connection for the first time to this SSH server (the OrangePi Zero). This step ensures that no other device pretends to be this OrangePi Zero in the future.
 
 <H2>3.3 Wifi (if you can't use cables)</H2>
-Connect the USB chager.
+Connect the USB charger.
 
 Look for the OrangePi Zero address in the home router (same way way as the ethernet method).
 
