@@ -106,6 +106,10 @@
 
 <h1>9. Activate 3D graphics acceleration and test</h1>
 
+* The OrangePi Zero ARM CPU, _Allwinner Sun8i H3_ has an embedded _Mali 400 GPU_.
+
+* Fortunately, the open source _Lima.ko_ driver for this GPU is already included by default in Armbian 😄
+
 * Run "sudo modprobe lima" and check that this kernel module, driver for the Mali 400 GPU, is loaded in Linux.
 
 * Run "lsmod" and check that the resulting lines have "lima" and "gpu_sched". This means that the 3D driver is loaded.
@@ -115,3 +119,41 @@
 * Test the 3d graphics by opening a terminal: "glxinfo" to confirm that the "lima" 3D driver is in use.
 
 * Type "glxgears" to see a demo of the OrangePi Zero 3D acceleration 🌠
+
+<h1>10. Activate and use analog audio</h1>
+
+* Enter "armbian-config" again. Select "System", "Hardware". Check the first item "audio-codec"
+
+<img width=400 src="https://user-images.githubusercontent.com/3515329/227737255-d5c87f7e-4a7d-4eb7-9519-51b0638dfa91.png">
+
+* Reboot and prepare another AV cable with 2 coax connector, ideally white and red, and terminate it with "Dupont" connectors as shown below:
+
+*insert photo of audio cable*
+
+* Connect the OrangePi Zero to the TV audio inputs or speakers (amplified, not a speaker by itself)
+
+* Configure the audio hardware.
+
+* Install audio application: "sudo apt install mpg123"
+
+* Test with a WAV file: _aplay yoursoundfile.wav_
+
+* Test with a MIDI file: _aplaymidi yourmidifile.midi_
+
+* Test with an MP3 file: _mpg123 yourmp3file.mp3_
+
+<h1>11. Install and test H264 video codec hardware acceleration</h1>
+
+* The OrangePi Zero ARM CPU, _Allwinner Sun8i H3_ has an embedded _video encoder and decoder_, and H264 is one of the most useful codecs in there.
+
+* Fortunately the open source _sunxi-cedrus.ko_ which handles the codec, is already included in Armbian.
+
+* Type "sudo modprobe sunxi-cedrus" to load the kernel module. Type "lsmod" to see the several kernel modules that were loaded at the same time.
+
+* Install non-accelerated video players, to measure the initial performance: "sudo apt install mpv ffmpeg".
+
+* Test the non-accelerated video playing: "mpv yourh264file.mp4" and "ffplay yourh264file.mp4".
+
+* With another terminal window, run "htop" and see the CPU load (the H3 has 4 CPU cores). Also notice the video smoothness.
+
+* Install the accelerated video players: _NOT DONE YET_
