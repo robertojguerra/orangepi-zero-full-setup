@@ -44,7 +44,7 @@
 
 * Then the script will start preparing the packages, sources, patches.
 
-* It will take a long time and it may need broadband if there's large downloads.
+* The scrip will perform large downloads and take a long time. Sit tight!
 
 * Once it finishes, the OS image is written in ../output/images. Use Balena Etcher.
 
@@ -63,17 +63,24 @@
   * <a href="sunxi-6.1/zzzz3-tv.patch">sunxi-6.1/zzzz3-tv.patch</a> : more additions to the "dts" and "dtsi" (like C include files), which I noticed were included in "yam" patch, but missing from the LibreElec patch
   * Reference: https://forum.armbian.com/topic/16804-solved-orange-pi-pc-h3-armbian-focal-5104-sunxi-av-tv-out-cvbs-enable/page/2/ and https://forum.armbian.com/topic/22226-orange-pi-zero-lts-tv-out-in-2022/
 
-* Move them to ~/armbian-2023.05/build/userpatches/kernel/archives/sunxi-6.1
+* Move them to ~/armbian-2023.05/build/userpatches/kernel/archives/sunxi-6.1 (using the scp command or sshfs)
 
 * Run ./compile.sh again. In the "TUI", <b>ask to CHANGE KERNEL CONFIGURATION</b>. Continue with the rest of configurations as before.
 
-* In Kernel Config, go to "device drivers", "graphics support", find "lima" and select it
+* The script will <b>apply the patches you downloaded</b>. This is the part that will fail if a patch is mis-formatted, or there are errors in the content if the patch. The script will tell you which patch, and what part was bad.
+<img width=600 src="https://user-images.githubusercontent.com/3515329/227739682-b63a58ab-e9d2-4a5e-91d0-66a6acbab98a.png">
+
+* Next, you will be sohwn the Kernel Config screen. Go to "Device Drivers", "Graphics Support", find "lima" and select it
+<p>
+<img width=400 src="https://user-images.githubusercontent.com/3515329/227739743-daba3421-2abc-4e6e-833f-072c2a46867e.png">
+<img width=400 src="https://user-images.githubusercontent.com/3515329/227739773-f01164f6-cc9d-4953-95ad-621483f0efdd.png">
+<img width=400 src="https://user-images.githubusercontent.com/3515329/227739815-1ded8a4a-2ba9-4794-8053-700193fa5aab.png">
+</p>
 
 *insert photos of kernelconfig screens*
 
 * Since you have new user patches and new kernel module selected, the armbian script will download _THE LINUX KERNEL SOURCE VERSION 6.1_ This may take 1 hour.
 
-* You will see patches being applied to several files. This is the part that will fail if a patch is mis-formatted, or there are errors in the content if the patch. The script will tell you which patch, and what part was bad.
 
 * Then you will see the u-boot compilation
 
