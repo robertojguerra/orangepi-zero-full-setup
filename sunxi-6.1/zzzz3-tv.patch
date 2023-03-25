@@ -1,0 +1,70 @@
+diff --git a/arch/arm/boot/dts/sun8i-h3-orangepi-pc.dts b/arch/arm/boot/dts/sun8i-h3-orangepi-pc.dts
+index 5aff8ecc66cbb..6626d2ced840c 100644
+--- a/arch/arm/boot/dts/sun8i-h3-orangepi-pc.dts
++++ b/arch/arm/boot/dts/sun8i-h3-orangepi-pc.dts
+@@ -204,6 +204,10 @@
+ 	status = "okay";
+ };
+ 
++&tve {
++	status = "okay";
++};
++
+ &uart0 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&uart0_pa_pins>;
+diff --git a/arch/arm/boot/dts/overlay/sun8i-h3-tve.dts b/arch/arm/boot/dts/overlay/sun8i-h3-tve.dts
+new file mode 100644
+index 000000000..07ba7ba71
+--- /dev/null
++++ b/arch/arm/boot/dts/overlay/sun8i-h3-tve.dts
+@@ -0,0 +1,34 @@
++/dts-v1/;
++/plugin/;
++
++/ {
++	compatible = "allwinner,sun8i-h3";
++	
++	fragment@0 {
++		target = <&de>;
++		__overlay__ {
++			status = "okay";
++		};
++	};
++
++	fragment@1 {
++		target = <&mixer1>;
++		__overlay__ {
++			status = "okay";
++		};
++	};
++
++	fragment@2 {
++		target = <&tcon1>;
++		 __overlay__ {
++			status = "okay";
++		};
++	};
++
++	fragment@3 {
++		target = <&tve>;
++		__overlay__ {
++			status = "okay";
++		};
++	};
++};
+diff --git a/arch/arm/boot/dts/sun8i-h2-plus-orangepi-zero.dts b/arch/arm/boot/dts/sun8i-h2-plus-orangepi-zero.dts
+index 4120437a1..4e10c8cfa 100644
+--- a/arch/arm/boot/dts/sun8i-h2-plus-orangepi-zero.dts
++++ b/arch/arm/boot/dts/sun8i-h2-plus-orangepi-zero.dts
+@@ -180,6 +180,10 @@ flash@0 {
+ 	};
+ };
+ 
++&tve {
++        status = "okay";
++};
++
+ &uart0 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&uart0_pa_pins>;
