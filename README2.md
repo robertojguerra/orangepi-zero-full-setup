@@ -32,9 +32,15 @@
 
 * ./compile.sh
 
-* You will be show the Armbian "TUI" (text user interface)
+* You will be presented the Armbian "TUI" (text user interface)
 
-* Select "Do not change kernel configuration", "orangepizero", "current ... LTS kernel", "Bullseye", "Standard"
+<img width=600 src="https://user-images.githubusercontent.com/3515329/227739289-a34b98e2-4902-4c95-850a-4e5a630c34b0.png">
+
+* Keep the default option: "Do not change the kernel configuration"
+
+* In the next screens, select"orangepizero", "Choose a kernel: current ... LTS kernel", "Bullseye Debian 11", and "Standard image with console interface"
+
+<img width=600 src="https://user-images.githubusercontent.com/3515329/227739379-b118881f-2af0-4eb5-840c-b75b82b738b0.png">
 
 * Then the script will start preparing the packages, sources, patches.
 
