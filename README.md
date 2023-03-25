@@ -6,12 +6,12 @@ Contents
 2. Install Armbian
 3. Start interfacing with Serial, Ethernet or Wifi
 4. Use the USB ports
-* Make a 3d printed case
-* Build your own image with added TV output, 3D acceleration
-* Install the x and openbox windows managers and xlde desktop
-* Test it with 3D graphics
-* Install video codec acceleration
-* Test it H264 videos
+5. Make a 3d printed case
+6. Build your own image with added TV output, 3D acceleration
+7. Install the x and openbox windows managers and xlde desktop
+8. Test it with 3D graphics
+9. Install video codec acceleration
+10. Test it H264 videos
 
 <H1>1. Get your hardware 😍 🛠️</H1>
 
@@ -76,7 +76,7 @@ Duplicate it in the same folder without the ".template". Look at the instruction
 Insert the microSD card in the OrangePi Zero
 
 
-<H1>3. Start interfacing with your OrangePi Zero</H1>
+<H1>3. Start interfacing with your OrangePi Zero :lips: :telephone:</H1>
 <H2>3.1 Serial (most reliable)</H2>
 Connect the USB-serial adapter in the OrangePi Zero and your laptop.
 
@@ -118,7 +118,7 @@ Log out the root user by typing "exit". Login again as your normal user (it is s
 
 If you want to change the network or Wifi settings, type "sudo nmtui" (superuser do Network Manager Text User Interface).
 
-<H1>4. USB Ports</H1>
+<H1>4. USB Ports :electric_plug:</H1>
 
 There is 1 type A USB port ready to USE. Let's check that it works.
 
@@ -136,6 +136,22 @@ The nice thing about the OrangePi Zero is that there is a lot of functionality i
 
 <img width=500 src="https://user-images.githubusercontent.com/3515329/227700485-48298e69-502a-4772-87a7-34a294f407b0.png">
 
-<usb cable photo here>
+*usb cable photo here*
 
 Also, if you get a USB OTG (on-the-go) cable, you can use the microUSB as a 4th USB port (you need to power the OrangePi through the metal pins)
+
+<H1>5. Make a 3D Printed Case :factory: :hammer:</H1>
+
+You have a running mini Linux server, but it is bare and exposed to metals, dirt, water, etc. We need to protect it.
+
+There's a very nice OrangePi Zero case in Thingiverse.com. It even has the opening for the 2x13 array of metal pins facing to the side 🙂
+
+https://www.thingiverse.com/thing:5424615
+
+And here is the case that I designed, if you like fast and light prints, with sharp edges and editable in FreeCAD
+
+*insert thingiverse link to my case*
+
+*insert photo*
+
+<h1>Parts 6 to 10 in Part 2... coming soon :scream: :rocket:</H1>
