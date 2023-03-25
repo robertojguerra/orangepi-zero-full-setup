@@ -7,11 +7,13 @@ Contents
 3. Start interfacing with Serial, Ethernet or Wifi
 4. Use the USB ports
 5. Make a 3d printed case
-6. Build your own image with added TV output, 3D acceleration
-7. Install the x and openbox windows managers and xlde desktop
-8. Test it with 3D graphics
-9. Install video codec acceleration
-10. Test it H264 videos
+6. Read and write digital inputs and outputs with C and Python
+7. Build your own image with added TV output driver, 3D acceleration
+8. Install the x and openbox windows managers and xlde desktop
+9. Activate 3D graphics acceleration and test
+10. Activate and use analog audio
+11. Install video codec acceleration and test
+12. Make your own audio/video apps with Python
 
 <H1>1. Get your hardware 😍 🛠️</H1>
 
@@ -154,4 +156,8 @@ And here is the case that I designed, if you like fast and light prints, with sh
 
 *insert photo*
 
-<h1>Parts 6 to 10 in Part 2... coming soon :scream: :rocket:</H1>
+<h1>Read and write digital inputs and outputs with C and Python</h1>
+
+*coming soon*
+
+<h1>Parts 7 to 12 in Part 2... coming soon :scream: :rocket:</H1>
