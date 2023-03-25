@@ -18,11 +18,8 @@ Contents
 ![usbserial](https://user-images.githubusercontent.com/3515329/227690645-c09604de-25f1-4790-aaf6-da139cda9219.png)
 <div>
 ![orangepi zero](https://user-images.githubusercontent.com/3515329/227690554-845e365b-dbbe-42bf-8b02-f3ec1da0d3d3.png)
-<div>
 ![microusb](https://user-images.githubusercontent.com/3515329/227691726-dd3f12f7-fad9-4eb5-9e47-4e8c6020b8bc.png)
-<div>
 ![acadapter](https://user-images.githubusercontent.com/3515329/227691083-cb2ad85b-2124-4a5e-9fd1-5fc7d331b45f.png)
-<div>
 
 Note: USB charger should be 1.0 amp or greater
 
