@@ -72,7 +72,9 @@
 
 * Press "enter". Do not reboot yet. Select "Boot environment". In "console=serial", replace "serial" with "both". This allows the kernel to print on the TV screen during startup.
 
-* Modify a composite video cable (yellow AV cable) with 2 female "Dupont" connectors.
+* Modify a composite video cable (yellow AV cable) with 2 female "Dupont" connectors and a 50 ohm resistor as shown below
+
+*insert photo of video cable for orangepi zero*
 
 * Connect them to the pins "GND" and "TVOUT" in the OrangePi Zero. Connect the AV connector to the TV, and turn the TV on.
 
