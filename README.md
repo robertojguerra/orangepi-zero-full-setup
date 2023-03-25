@@ -13,7 +13,7 @@ Contents
 * Install video codec acceleration
 * Test it H264 videos
 
-<H1>1. Get your hardware :)</H1>
+<H1>1. Get your hardware 😍 🛠️</H1>
 
 <p float="left">
 <img width=250 src="https://user-images.githubusercontent.com/3515329/227690645-c09604de-25f1-4790-aaf6-da139cda9219.png" />
@@ -43,7 +43,7 @@ Wifi works slowly, so it is preferable to use an ethernet cable.
 
 The USB charger should be 1.0 amp or greater
 
-<H1>2. Install Armbian</H1>
+<H1>2. Download and Install Armbian 💾 🔥 </H1>
 
 Visit armbian.com, click "Download", "armhf" (it means arm 32 bit hard float, a class of ARM CPUs).
 
@@ -61,4 +61,12 @@ Download "Balena Etcher"
 https://www.balena.io/etcher
 <img src="https://user-images.githubusercontent.com/3515329/227697052-ab88a251-2823-4606-a594-0bdc0cbdc8d9.png">
 
-Select the 
+Select the downloaded file, select the destination disk (the microSD), and start writing the Linux filesystem in the microSD.
+
+After verification, the microSD is ready to be inserted in the OrangePi Zero :happy:
+
+<b>These options are available if you run Linux in your laptop</b>
+By default, the system you just burned in the microSD card will connect to the wired ethernet network, and get an automatic DHCP address.
+If you want to configure a fixed address and wifi network, look into the microSD's  "/boot/armbian_first_run.txt.template"
+Duplicate it in the same folder without the ".template". Look at the instructions in that file.
+
