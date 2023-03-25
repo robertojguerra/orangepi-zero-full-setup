@@ -146,7 +146,7 @@ Also, if you get a USB OTG (on-the-go) cable, you can use the microUSB as a 4th 
 
 You have a running mini Linux server, but it is bare and exposed to metals, dirt, water, etc. We need to protect it.
 
-There's a very nice OrangePi Zero case in Thingiverse.com. It even has the opening for the 2x13 array of metal pins facing to the side 🙂
+If you have a 3D printer. There's a very nice OrangePi Zero case in Thingiverse.com. It even has the opening for the 2x13 array of metal pins facing to the side 🙂
 
 https://www.thingiverse.com/thing:5424615
 
