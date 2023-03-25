@@ -1,0 +1,37 @@
+diff --git a/arch/arm/boot/dts/overlay/Makefile b/arch/arm/boot/dts/overlay/Makefile
+index 23f8c2048..b3bd27351 100644
+--- a/arch/arm/boot/dts/overlay/Makefile
++++ b/arch/arm/boot/dts/overlay/Makefile
+@@ -80,6 +80,7 @@ dtbo-$(CONFIG_MACH_SUN8I) += \
+ 	sun8i-h3-usbhost2.dtbo \
+ 	sun8i-h3-usbhost3.dtbo \
+ 	sun8i-h3-w1-gpio.dtbo \
++        sun8i-h3-tve.dtbo \
+ 	sun8i-r40-i2c2.dtbo \
+ 	sun8i-r40-i2c3.dtbo \
+ 	sun8i-r40-spi-spidev0.dtbo \
+diff --git a/arch/arm/boot/dts/overlay/README.sun8i-h3-overlays b/arch/arm/boot/dts/overlay/README.sun8i-h3-overlays
+index 302973491..a347fe7b0 100644
+--- a/arch/arm/boot/dts/overlay/README.sun8i-h3-overlays
++++ b/arch/arm/boot/dts/overlay/README.sun8i-h3-overlays
+@@ -34,6 +34,7 @@ adding fixed software (GPIO) chip selects is possible with a separate overlay
+ - usbhost2
+ - usbhost3
+ - w1-gpio
++- tve
+ 
+ ### Overlay details:
+ 
+@@ -248,3 +249,12 @@ param_w1_pin_int_pullup (bool)
+ 	Set to 1 to enable the pull-up
+ 	This option should not be used with multiple devices, parasite power setup
+ 		or long wires -	please use external pull-up resistor instead
++
++### tve
++
++Activates Composite TV Encoder
++
++Parameters:
++	Unknown at this stage. 
++	Maybe none. 
++	Not sure how to change the mode between PAL/NTSC.
