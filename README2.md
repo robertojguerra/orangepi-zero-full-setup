@@ -70,33 +70,38 @@
 * The script will <b>apply the patches you downloaded</b>. This is the part that will fail if a patch is mis-formatted, or there are errors in the content if the patch. The script will tell you which patch, and what part was bad.
 <img width=600 src="https://user-images.githubusercontent.com/3515329/227739682-b63a58ab-e9d2-4a5e-91d0-66a6acbab98a.png">
 
-* Next, you will be sohwn the Kernel Config screen. Go to "Device Drivers", "Graphics Support", find "lima" and select it
+* Next, you will be sohwn the Kernel Config screen. Go to "Device Drivers", "Graphics Support", find "LIMA (DRM support...".
 <p>
 <img width=400 src="https://user-images.githubusercontent.com/3515329/227739743-daba3421-2abc-4e6e-833f-072c2a46867e.png">
 <img width=400 src="https://user-images.githubusercontent.com/3515329/227739773-f01164f6-cc9d-4953-95ad-621483f0efdd.png">
 <img width=400 src="https://user-images.githubusercontent.com/3515329/227739815-1ded8a4a-2ba9-4794-8053-700193fa5aab.png">
 </p>
 
-*insert photos of kernelconfig screens*
+* Press "SPACE" until you see "<M>". This means that the kernel module will be compiled as a loadable *.ko module. If you select "*", it will be incorporated in the kernel. The ko location will be /lib/modules/6.1.15-sunxi/kernel/drivers/gpu/drm/lima/lima.ko
 
-* Since you have new user patches and new kernel module selected, the armbian script will download _THE LINUX KERNEL SOURCE VERSION 6.1_ This may take 1 hour.
+* Since you have new user patches and new kernel module selected, the armbian script will download _THE LINUX KERNEL SOURCE VERSION 6.1_ This may take 1 hour. Don't sit tight, go outside and stretch! 😸
 
-
-* Then you will see the u-boot compilation
+* Then you will see the u-boot compilation process. This will take a few minutes.
 
 * Then you will see the *_LINUX KERNEL_* compilation. This may take 2 hours, and it may fail if the C code is bad due to the patches
 
-* If your downloaded Linux kernel is not version 6.1, you may need to manually fix the patches, to harmonize with the new Linux source. Sometimes, the line numbers change. Sometimes a function gets moved or deleted. Sometimes the parts of patch is "mainlined" (added to the official kernel), so the patch would have to have that part removed.
+* <b>BIG NOTE</b>If your downloaded Linux kernel is <b>not version 6.1</b>, you may need to manually fix the patches, to harmonize with the new Linux source. Sometimes, the line numbers change. Sometimes a function gets moved or deleted. Sometimes the parts of patch is "mainlined" (added to the official kernel), so the patch would have to have that part removed. If you make the patch work in another kernel version, let me know, so I can include it in this Github repository.
 
-* You will end up with a ...img.xz file. Write it on the microSD with Balena Etcher.
+* You will end up with a <b>Armbian_23.05.0-trunk_Orangepizero_bullseye_current_6.1.15.img</b> file. Write it on the microSD with <b>Balena Etcher</b>.
 
 <h2> 7.4 First time with your OWN Armbian OS, with your OWN changes 🤟</h2>
 
 * Test it in the OrangePi Zero. Repeat the same account configuration as the first time, though serial or SSH.
 
 * Run "armbian-config". In the "TUI" select "System", "Hardware". Find "tve" and select it.
+ 
+<img width=600 src="https://user-images.githubusercontent.com/3515329/227740401-7e473c7c-cd9b-4ecc-82a8-41f09967dd58.png">
 
-* Press "enter". Do not reboot yet. Select "Boot environment". In "console=serial", replace "serial" with "both". This allows the kernel to print on the TV screen during startup.
+* Press "enter". Do not reboot yet. Select "Bootenv". In "console=serial", replace "serial" with "both". This allows the kernel to print on the TV screen during startup.
+ 
+<img width=600 src="https://user-images.githubusercontent.com/3515329/227740473-d12702c1-3443-42aa-af1f-1463249d3807.png">
+
+* Notice that the previous step has added "tve" at the right side of "usbhost3". This is the place where we tell the bootloader "Uboot" to insert the "dtbos" (device tree binary overlays) in the "dtb", before running the Linux kernel, so that it knows where the new hardware it (bus and addresses).
 
 <h2> 7.5 You will need a new video cable </h2>
 
