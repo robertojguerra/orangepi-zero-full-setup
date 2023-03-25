@@ -58,7 +58,7 @@
 
 *insert photos of kernelconfig screens*
 
-* Since you have new user patches and new kernel module selected, the armbian script will download *_THE LINUX KERNEL SOURCE VERSION 6.1_* This may take 1 hour.
+* Since you have new user patches and new kernel module selected, the armbian script will download _THE LINUX KERNEL SOURCE VERSION 6.1_ This may take 1 hour.
 
 * You will see patches being applied to several files. This is the part that will fail if a patch is mis-formatted, or there are errors in the content if the patch. The script will tell you which patch, and what part was bad.
 
@@ -156,4 +156,4 @@
 
 * With another terminal window, run "htop" and see the CPU load (the H3 has 4 CPU cores). Also notice the video smoothness.
 
-* Install the accelerated video players: _NOT DONE YET_
+* Install the accelerated video players: <b>NOT DONE YET</b>
