@@ -122,7 +122,7 @@
 
 <h1>10. Activate and use analog audio</h1>
 
-* Enter "armbian-config" again. Select "System", "Hardware". Check the first item "audio-codec"
+* Enter "armbian-config" again. Select "System", "Hardware". Check the first item "analog-codec"
 
 <img width=400 src="https://user-images.githubusercontent.com/3515329/227737255-d5c87f7e-4a7d-4eb7-9519-51b0638dfa91.png">
 
