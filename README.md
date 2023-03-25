@@ -2,10 +2,10 @@
 How to setup the orange pi zero completely
 
 Contents
-* Get your orangepi zero, power supply and USB-serial
-* Install Armbian
-* Start interfacing with Serial, Ethernet or Wifi
-* Use the USB ports
+1. Get your orangepi zero, power supply and USB-serial
+2. Install Armbian
+3. Start interfacing with Serial, Ethernet or Wifi
+4. Use the USB ports
 * Make a 3d printed case
 * Build your own image with added TV output, 3D acceleration
 * Install the x and openbox windows managers and xlde desktop
@@ -87,3 +87,41 @@ In your laptop download and run Putty (Windows) or Screen (Linux). The serial se
 In Linux, run "screen /dev/ttyUSB0 115200"
 
 Connect the USB cable to the charger and to the OrangePi Zero microUSB port. You should see the booting text messages in the Putty or screen window
+
+<H2>3.2 Ethernet (the fastest and most flexible)</H2>
+Connect the OrangePi Zero to your home router. Connect the USB chager.
+
+Enter your home router "Network Status" page. Look for the list of DHCP clients.
+
+Look for "orangepizero.local" or "orangepizero.lan" and take note of the IPv4 address (for example 192.168.1.xxx)
+
+From your laptop's command line, connect via SSH protocol: "ssh root@192.168.1.xxx"
+
+<img width 400 src="https://user-images.githubusercontent.com/3515329/227699355-08315062-b82b-4683-a1c5-600dd89a6979.png">
+
+Press Y to accept the SSH connection for the first time to this SSH server (the OrangePi Zero). This step ensures that no other device pretends to be this OrangePi Zero in the future.
+
+<H2>3.3 Wifi (if you can't use cables)</H2>
+Connect the USB chager.
+
+Look for the OrangePi Zero address in the home router (same way way as the ethernet method).
+
+Connect with SSH.
+
+<H2>3.4 Once connected:</H2>
+
+At first connection, the OrangePi Zero will ask you to create a root password, a user, and a user password.
+
+Also, you can create "locales" if you want Linux in another language. For simplicity, choose "No" and "153 Skip"
+
+Log out the root user by typing "exit". Login again as your normal user (it is safer to only use "root" only when necessary).
+
+<H1>USB Ports</H1>
+There is 1 type A USB port ready to USE. Let's check that it works.
+
+With no USB devices connected, type "lsusb". Look at the result.
+Plug in one device, or more with a USB hub.
+<img width=500 src="https://user-images.githubusercontent.com/3515329/227699898-fe165788-cc21-489e-92ab-58e5e382f43c.png">
+Notice in my case: one hub, one keyboard, one mouse and one webcam.
+
+The values are the USB bus, device, the VID:PID, and the device name.
