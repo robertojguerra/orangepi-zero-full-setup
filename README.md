@@ -116,12 +116,15 @@ Also, you can create "locales" if you want Linux in another language. For simpli
 
 Log out the root user by typing "exit". Login again as your normal user (it is safer to only use "root" only when necessary).
 
-<H1>USB Ports</H1>
+<H1>4. USB Ports</H1>
 There is 1 type A USB port ready to USE. Let's check that it works.
 
 With no USB devices connected, type "lsusb". Look at the result.
+
 Plug in one device, or more with a USB hub.
-<img width=500 src="https://user-images.githubusercontent.com/3515329/227699898-fe165788-cc21-489e-92ab-58e5e382f43c.png">
+
+<img width=700 src="https://user-images.githubusercontent.com/3515329/227699898-fe165788-cc21-489e-92ab-58e5e382f43c.png">
+
 Notice in my case: one hub, one keyboard, one mouse and one webcam.
 
 The values are the USB bus, device, the VID:PID, and the device name.
