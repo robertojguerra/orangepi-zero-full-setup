@@ -156,7 +156,7 @@ And here is the case that I designed, if you like fast and light prints, with sh
 
 *insert photo*
 
-<h1>Read and write digital inputs and outputs with C and Python</h1>
+<h1>6. Read and write digital inputs and outputs with C and Python</h1>
 
 *coming soon*
 
