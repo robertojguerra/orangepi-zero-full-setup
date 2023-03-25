@@ -45,9 +45,9 @@
 
   * <a href="sunxi-6.1/0036-wip-h3-h5-cvbs-armbian.patch">sunxi-6.1/0036-wip-h3-h5-cvbs-armbian.patch</a> : makes additions to the "dts", which tells the kernel where are the new devices. Adds kernel code to interact with the tv encoder. With my modifications, now it is applicable to Armbian (this patch came from the LibreElec github).
 
-  * <a href="sunxi-6.1/zzzz2-tv.patch">sunxi-6.1/zzzz2-tv.patch</a>-....patch : by Armbian user "gleam2003", adds directives to make sure that the dtbo (device tree binary overlay) is compiled
+  * <a href="sunxi-6.1/zzzz2-tv.patch">sunxi-6.1/zzzz2-tv.patch</a> : by Armbian user "gleam2003", adds directives to make sure that the dtbo (device tree binary overlay) is compiled
 
-  * zzzz3-....patch : more additions to the "dts" and "dtsi" (like C include files), which I noticed were included in "yam" patch, but missing from the LibreElec patch
+  * <a href="sunxi-6.1/zzzz3-tv.patch">sunxi-6.1/zzzz3-tv.patch</a> : more additions to the "dts" and "dtsi" (like C include files), which I noticed were included in "yam" patch, but missing from the LibreElec patch
   * Reference: https://forum.armbian.com/topic/16804-solved-orange-pi-pc-h3-armbian-focal-5104-sunxi-av-tv-out-cvbs-enable/page/2/ and https://forum.armbian.com/topic/22226-orange-pi-zero-lts-tv-out-in-2022/
 
 * Move them to ~/armbian-2023.05/build/userpatches/kernel/archives/sunxi-6.1
