@@ -23,10 +23,8 @@ Contents
 
 <p float="left">
 <img width=250 src="https://user-images.githubusercontent.com/3515329/227691083-cb2ad85b-2124-4a5e-9fd1-5fc7d331b45f.png" />
-<img width=500 src="https://user-images.githubusercontent.com/3515329/227697165-1cceb21c-1e4d-49fd-9c9e-d236038d5b8b.png">
+<img width=500 src="https://user-images.githubusercontent.com/3515329/227697353-2728ee0d-f895-4b5b-a377-f16db92bbab8.png">
 </p>
-
-Note: USB charger should be 1.0 amp or greater
 
 The orangepi zero is available from many sellers in Aliexpress, eBay and Amazon
 https://www.aliexpress.us/item/3256805178614559.html
@@ -42,6 +40,8 @@ Some have 256MB RAM, and some have 512MB... all are suitable for light server ap
 Get a microSD card of "Class 10", 16 GB or larger, to have acceptable speed and space to grow.
 
 Wifi works slowly, so it is preferable to use an ethernet cable.
+
+The USB charger should be 1.0 amp or greater
 
 <H1>2. Install Armbian</H1>
 
