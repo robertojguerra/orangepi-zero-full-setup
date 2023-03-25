@@ -45,6 +45,8 @@ The USB charger should be 1.0 amp or greater
 
 <H1>2. Download and Install Armbian 💾 🔥 </H1>
 
+<img width=200 src="https://user-images.githubusercontent.com/3515329/227698435-1595b1e4-ac6e-4932-a19a-ff6c6e506247.png">
+
 Visit armbian.com, click "Download", "armhf" (it means arm 32 bit hard float, a class of ARM CPUs).
 
 <img src="https://user-images.githubusercontent.com/3515329/227692998-df69bdbc-5d09-4102-b90c-997e1e97727a.png">
@@ -59,14 +61,18 @@ You should see a file Armbian....img.xz starting to download, 424 Mbyte approx.
 Download "Balena Etcher"
 
 https://www.balena.io/etcher
+
 <img src="https://user-images.githubusercontent.com/3515329/227697052-ab88a251-2823-4606-a594-0bdc0cbdc8d9.png">
 
 Select the downloaded file, select the destination disk (the microSD), and start writing the Linux filesystem in the microSD.
 
 After verification, the microSD is ready to be inserted in the OrangePi Zero :happy:
 
-<b>These options are available if you run Linux in your laptop</b>
-By default, the system you just burned in the microSD card will connect to the wired ethernet network, and get an automatic DHCP address.
-If you want to configure a fixed address and wifi network, look into the microSD's  "/boot/armbian_first_run.txt.template"
+<b>This paragraph is valid ONLY if you run Linux in your laptop</b>
+By default, the system you just burned in the microSD card will connect to the wired ethernet network, and get an automatic DHCP address.<br>
+If you want to configure a fixed address and wifi network, look into the microSD's  "/boot/armbian_first_run.txt.template"<br>
 Duplicate it in the same folder without the ".template". Look at the instructions in that file.
 
+Insert the microSD card in the OrangePi Zero
+
+Connect the USB-serial adapter in the OrangePi Zero and your laptop.
