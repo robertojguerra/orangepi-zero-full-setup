@@ -68,7 +68,7 @@ Select the downloaded file, select the destination disk (the microSD), and start
 
 After verification, the microSD is ready to be inserted in the OrangePi Zero :happy:
 
-<b>This paragraph is valid ONLY if you run Linux in your laptop</b>
+<b>This paragraph is valid ONLY if you run Linux in your laptop</b><br>
 By default, the system you just burned in the microSD card will connect to the wired ethernet network, and get an automatic DHCP address.<br>
 If you want to configure a fixed address and wifi network, look into the microSD's  "/boot/armbian_first_run.txt.template"<br>
 Duplicate it in the same folder without the ".template". Look at the instructions in that file.
@@ -76,3 +76,8 @@ Duplicate it in the same folder without the ".template". Look at the instruction
 Insert the microSD card in the OrangePi Zero
 
 Connect the USB-serial adapter in the OrangePi Zero and your laptop.
+<img width=400 src="https://user-images.githubusercontent.com/3515329/227698605-c79c2747-7a31-4553-9a1d-e3c4891726a1.png">
+
+In your laptop download and run Putty (Windows) or Screen (Linux). The serial settings are 115200,8N1. The serial port *MAY* be COM3 or /dev/ttyUSB0
+
+Connect the USB cable to the charger and to the OrangePi Zero microUSB port.
