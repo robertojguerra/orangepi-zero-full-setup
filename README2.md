@@ -41,17 +41,18 @@
 
 * Download these patches:
 
- * 0036-....patch : makes additions to the "dts", which tells the kernel where are the new devices. Adds kernel code to interact with the tv encoder. With my modifications to be applicable to Armbian (the patch came from the LibreElec github)
+  * 0036-....patch : makes additions to the "dts", which tells the kernel where are the new devices. Adds kernel code to interact with the tv encoder. With my modifications to be applicable to Armbian (the patch came from the LibreElec github)
 
- * zzzz2-....patch : by Armbian user "gleam2003", adds directives to make sure that the dtbo (device tree binary overlay) is compiled
+  * zzzz2-....patch : by Armbian user "gleam2003", adds directives to make sure that the dtbo (device tree binary overlay) is compiled
 
- * zzzz3-....patch : more additions to the "dts" and "dtsi" (like C include files), which I noticed were missing from the LibreElec patch
+  * zzzz3-....patch : more additions to the "dts" and "dtsi" (like C include files), which I noticed were included in "yam" patch, but missing from the LibreElec patch
+  * Reference: https://forum.armbian.com/topic/16804-solved-orange-pi-pc-h3-armbian-focal-5104-sunxi-av-tv-out-cvbs-enable/page/2/ and 
 
 * Move them to ~/armbian-2023.05/build/userpatches/kernel/archives/sunxi-6.1
 
 * Run ./compile.sh again. Repeat same selections in the "TUI"
 
-* Because you have user patches, the armbian script will download *_THE LINUX KERNEL SOURCE VERSION 6.1_* This may take 1 hour.
+* Since you have new user patches, the armbian script will download *_THE LINUX KERNEL SOURCE VERSION 6.1_* This may take 1 hour.
 
 * You will see patches being applied to several files. This is the part that will fail if a patch is mis-formatted, or there are errors in the content if the patch. The script will tell you which patch, and what part was bad.
 
