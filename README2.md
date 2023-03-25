@@ -43,7 +43,7 @@
 
 * Download these patches:
 
-  * 0036-....patch : makes additions to the "dts", which tells the kernel where are the new devices. Adds kernel code to interact with the tv encoder. With my modifications, now it is applicable to Armbian (this patch came from the LibreElec github).
+  * <a href="sunxi-6.1/0036-wip-h3-h5-cvbs-armbian.patch"> : makes additions to the "dts", which tells the kernel where are the new devices. Adds kernel code to interact with the tv encoder. With my modifications, now it is applicable to Armbian (this patch came from the LibreElec github).
 
   * zzzz2-....patch : by Armbian user "gleam2003", adds directives to make sure that the dtbo (device tree binary overlay) is compiled
 
