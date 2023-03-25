@@ -22,8 +22,8 @@ Contents
 </p>
 
 <p float="left">
-<img width=250 src="https://user-images.githubusercontent.com/3515329/227691083-cb2ad85b-2124-4a5e-9fd1-5fc7d331b45f.png" />
-<img width=500 src="https://user-images.githubusercontent.com/3515329/227697353-2728ee0d-f895-4b5b-a377-f16db92bbab8.png">
+<img width=300 src="https://user-images.githubusercontent.com/3515329/227691083-cb2ad85b-2124-4a5e-9fd1-5fc7d331b45f.png" />
+<img width=400 src="https://user-images.githubusercontent.com/3515329/227697353-2728ee0d-f895-4b5b-a377-f16db92bbab8.png">
 </p>
 
 The orangepi zero is available from many sellers in Aliexpress, eBay and Amazon
