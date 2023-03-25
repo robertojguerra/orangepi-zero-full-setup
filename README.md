@@ -13,7 +13,7 @@ Contents
 * Install video codec acceleration
 * Test it H264 videos
 
-<b>1. Get your hardware :)</b>
+<H1>1. Get your hardware :)</H1>
 
 <p float="left">
 <img width=200 src="https://user-images.githubusercontent.com/3515329/227690645-c09604de-25f1-4790-aaf6-da139cda9219.png" />
