@@ -13,7 +13,7 @@
 
 <img width=600 src="https://user-images.githubusercontent.com/3515329/227738861-54c57422-7d6b-4c90-95f4-d84e4d5936b3.png">
 
-* Login as a regular user: find its IP with "ip a", and from Putty or Linux terminal, connect with SSH
+* Login as a regular user: find its IP with "ip a", and from Putty or Linux terminal, connect with SSH. In the example below, the address is 192.168.1.131
 
 <p>
 <img width=600 src="https://user-images.githubusercontent.com/3515329/227739034-d7d1b334-622b-4b24-8ce8-aba7292baa07.png">
