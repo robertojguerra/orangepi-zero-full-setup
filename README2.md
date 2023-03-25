@@ -50,9 +50,11 @@
 
 * Move them to ~/armbian-2023.05/build/userpatches/kernel/archives/sunxi-6.1
 
-* Run ./compile.sh again. Repeat same selections in the "TUI"
+* Run ./compile.sh again. In the "TUI", ask to change kernel configuration. Continue with the other configurations as before.
 
-* Since you have new user patches, the armbian script will download *_THE LINUX KERNEL SOURCE VERSION 6.1_* This may take 1 hour.
+* In Kernel Config, go to "device drivers", "graphics support", find "lima" and select it
+
+* Since you have new user patches and new kernel module selected, the armbian script will download *_THE LINUX KERNEL SOURCE VERSION 6.1_* This may take 1 hour.
 
 * You will see patches being applied to several files. This is the part that will fail if a patch is mis-formatted, or there are errors in the content if the patch. The script will tell you which patch, and what part was bad.
 
@@ -81,3 +83,5 @@
 * The text is overflowing to the left, right, upper, lower edges of the TV, due to "overscan".
 
 * This flaw was not present in Kernel 4.x. This is a flaw in the current driver that we as a community should try to resolve.
+
+* Run "sudo modprobe lima" and check that this kernel module, driver for the Mali 400 GPU, is loaded in Linux.
