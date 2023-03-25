@@ -85,3 +85,13 @@
 * This flaw was not present in Kernel 4.x. This is a flaw in the current driver that we as a community should try to resolve.
 
 * Run "sudo modprobe lima" and check that this kernel module, driver for the Mali 400 GPU, is loaded in Linux.
+
+<h1>8. Install the xinit and xlde desktop</h1>
+
+* apt install xinit xterm xauth x11-apps xserver-xorg g3dviewer mesa-util lightdm
+
+* Reboot Orangepi Zero
+
+* You should see a graphical logic screen
+
+* Test the 3d graphics with the G3D Viewer
