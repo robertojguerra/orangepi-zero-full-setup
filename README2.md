@@ -46,7 +46,7 @@
   * zzzz2-....patch : by Armbian user "gleam2003", adds directives to make sure that the dtbo (device tree binary overlay) is compiled
 
   * zzzz3-....patch : more additions to the "dts" and "dtsi" (like C include files), which I noticed were included in "yam" patch, but missing from the LibreElec patch
-  * Reference: https://forum.armbian.com/topic/16804-solved-orange-pi-pc-h3-armbian-focal-5104-sunxi-av-tv-out-cvbs-enable/page/2/ and 
+  * Reference: https://forum.armbian.com/topic/16804-solved-orange-pi-pc-h3-armbian-focal-5104-sunxi-av-tv-out-cvbs-enable/page/2/ and https://forum.armbian.com/topic/22226-orange-pi-zero-lts-tv-out-in-2022/
 
 * Move them to ~/armbian-2023.05/build/userpatches/kernel/archives/sunxi-6.1
 
@@ -94,4 +94,8 @@
 
 * You should see a graphical logic screen
 
-* Test the 3d graphics with the G3D Viewer
+* The lxde desktop will be "overscanned" beyond the edges of the TV. You will have to live with this until someone comes up with a solution.
+
+* Test the 3d graphics by opening a terminal: "glxinfo" to confirm that the "lima" 3D driver is in use.
+
+* Type "glxgears" to see a demo of the OrangePi Zero 3D acceleration 🌠
