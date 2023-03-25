@@ -37,7 +37,7 @@
 
 * Run this OS in the OrangePi Zero, to make sure you have a good OS building system. Test that you can login with SSH.
 
-<h3>7.3 Add the TV encoder driver to the Linux kernel source</h3>
+<h2>7.3 Add the TV encoder driver to the Linux kernel source</h2>
 
 * Download these patches:
 
@@ -66,11 +66,15 @@
 
 * You will end up with a ...img.xz file. Write it on the microSD with Balena Etcher.
 
+<h2> 7.4 First time with your OWN Armbian OS 🤟</h2>
+
 * Test it in the OrangePi Zero. Repeat the same account configuration as the first time, though serial or SSH.
 
 * Run "armbian-config". In the "TUI" select "System", "Hardware". Find "tve" and select it.
 
 * Press "enter". Do not reboot yet. Select "Boot environment". In "console=serial", replace "serial" with "both". This allows the kernel to print on the TV screen during startup.
+
+<h2> 7.5 You will need a new video cable </h2>
 
 * Modify a composite video cable (yellow AV cable) with 2 female "Dupont" connectors and a 50 ohm resistor as shown below
 
@@ -85,7 +89,6 @@
 * The text is overflowing to the left, right, upper, lower edges of the TV, due to "overscan".
 
 * This flaw was not present in Kernel 4.x. This is a flaw in the current driver that we as a community should try to resolve.
-
 
 <h1>8. Install the xinit and xlde desktop</h1>
 
