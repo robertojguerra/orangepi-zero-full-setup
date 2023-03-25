@@ -84,7 +84,6 @@
 
 * This flaw was not present in Kernel 4.x. This is a flaw in the current driver that we as a community should try to resolve.
 
-* Run "sudo modprobe lima" and check that this kernel module, driver for the Mali 400 GPU, is loaded in Linux.
 
 <h1>8. Install the xinit and xlde desktop</h1>
 
@@ -95,6 +94,14 @@
 * You should see a graphical logic screen
 
 * The lxde desktop will be "overscanned" beyond the edges of the TV. You will have to live with this until someone comes up with a solution.
+
+<h1>9. Activate 3D graphics acceleration and test</h1>
+
+* Run "sudo modprobe lima" and check that this kernel module, driver for the Mali 400 GPU, is loaded in Linux.
+
+* Run "lsmod" and check that the resulting lines have "lima" and "gpu_sched". This means that the 3D driver is loaded.
+
+* Log out of the lxde session, and log back in.
 
 * Test the 3d graphics by opening a terminal: "glxinfo" to confirm that the "lima" 3D driver is in use.
 
