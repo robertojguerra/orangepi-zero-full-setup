@@ -119,15 +119,25 @@
 
 * This flaw was not present in Kernel 4.x. This is a flaw in the current driver that we as a community should try to resolve.
 
-<h1>8. Install the xinit and xlde desktop</h1>
+<h1>8. Install the X11 and xlde desktop</h1>
 
-* apt install xinit xterm xauth x11-apps xserver-xorg g3dviewer mesa-util lightdm
+* apt install xinit xterm xauth x11-apps xserver-xorg lightdm
 
 * Reboot Orangepi Zero
 
 * You should see a graphical logic screen
 
 * The lxde desktop will be "overscanned" beyond the edges of the TV. You will have to live with this until someone comes up with a solution.
+ 
+  * Tip: from a terminal (Xterm or LXDterm) in the "LXDE start menu", execute this to check and change the resolution
+ 
+  * xrandr --output Composite-1
+ 
+  * xrandr --output Composite-1 --mode NTSC (or PAL)
+ 
+  * xrandr --display :0.0 --output Composite-1 --mode NTSC (if executing from SSH)
+ 
+  * xrandr may be the key to mitigating the overscan problem, but the true solution would be to improve the TV encoder driver
 
 <h1>9. Activate 3D graphics acceleration and test</h1>
 
@@ -141,9 +151,11 @@
 
 * Log out of the lxde session, and log back in.
 
-* Test the 3d graphics by opening a terminal: "glxinfo" to confirm that the "lima" 3D driver is in use.
+* "sudo apt install mesa-util g3dviewer"
+ 
+* Test the 3d graphics by opening a terminal: "glxinfo -B" to confirm that the "lima" 3D driver is in use.
 
-* Type "glxgears" to see a demo of the OrangePi Zero 3D acceleration 🌠
+* Type "glxgears" and "g3dviewer" to see a demo of the OrangePi Zero 3D acceleration 🌠
 
 <h1>10. Activate and use analog audio</h1>
 
