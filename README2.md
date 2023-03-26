@@ -137,6 +137,8 @@
  
   * xrandr --display :0.0 --output Composite-1 --mode NTSC (if executing from SSH)
  
+  * you can replace "--display" with "-d" and ":0.0" with ":0"
+ 
   * xrandr may be a way to mitigate the overscan problem, but the true solution would be to improve the TV encoder driver
 
 <h1>9. Activate 3D graphics acceleration and test</h1>
