@@ -129,7 +129,7 @@
 
 * The lxde desktop will be "overscanned" beyond the edges of the TV. You will have to live with this until someone comes up with a solution.
  
-  * Tip: from a terminal (Xterm or LXDterm) in the "LXDE start menu", execute this to check and change the resolution
+* Tip: from a terminal (Xterm or LXDterm) in the "LXDE start menu", execute this to check and change the resolution
  
   * xrandr --output Composite-1
  
@@ -137,7 +137,7 @@
  
   * xrandr --display :0.0 --output Composite-1 --mode NTSC (if executing from SSH)
  
-  * xrandr may be the key to mitigating the overscan problem, but the true solution would be to improve the TV encoder driver
+  * xrandr may be a way to mitigate the overscan problem, but the true solution would be to improve the TV encoder driver
 
 <h1>9. Activate 3D graphics acceleration and test</h1>
 
@@ -157,6 +157,8 @@
 
 * Type "glxgears" and "g3dviewer" to see a demo of the OrangePi Zero 3D acceleration 🌠
 
+* Tip: if you want to do the previous 2 steps from SSH, first execute "export DISPLAY=:0.0"
+ 
 <h1>10. Activate and use analog audio</h1>
 
 * Enter "armbian-config" again. Select "System", "Hardware". Check the first item "analog-codec"
