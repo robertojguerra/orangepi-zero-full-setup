@@ -161,6 +161,12 @@
 
 * Tip: if you want to do the previous 2 steps from SSH, first execute "export DISPLAY=:0.0"
  
+* Install some 3D screensavers: "sudo apt install xscreensavers xscreensavers-gl xscreensavers-gl-extra"
+ 
+   * cd /usr/libexec/xscreensavers
+ 
+   * ./glsnake
+ 
 <h1>10. Activate and use analog audio</h1>
 
 * Enter "armbian-config" again. Select "System", "Hardware". Check the first item "analog-codec"
