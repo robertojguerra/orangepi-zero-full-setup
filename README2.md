@@ -140,6 +140,8 @@
   * you can replace "--display" with "-d" and ":0.0" with ":0"
  
   * xrandr may be a way to mitigate the overscan problem, but the true solution would be to improve the TV encoder driver
+ 
+    * https://www.youtube.com/watch?v=xGJk-df4fbM
 
 <h1>9. Activate 3D graphics acceleration and test</h1>
 
