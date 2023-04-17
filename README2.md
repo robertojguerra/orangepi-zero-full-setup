@@ -175,13 +175,19 @@
 
 <img width=400 src="https://user-images.githubusercontent.com/3515329/227737255-d5c87f7e-4a7d-4eb7-9519-51b0638dfa91.png">
 
-* Reboot and prepare another AV cable with 2 coax connector, ideally white and red, and terminate it with "Dupont" connectors as shown below:
+* Reboot. Then install the audio driver "sudo apt install alsa-utils"
+ 
+* and prepare another AV cable with 2 coax connector, ideally white and red, and terminate it with "Dupont" connectors as shown below:
 
 *insert photo of audio cable*
 
 * Connect the OrangePi Zero to the TV audio inputs or speakers (amplified, not a speaker by itself)
+ 
+* Verify that the audio driver sees your audio hardware: "aplay -L" and "arecord -L"
 
 * Configure the audio hardware.
+ 
+* Type "alsamixer", then with the arrow keys increase the "Line Out" level to 25%. Then press "ESC" to exit
 
 * Install audio application: "sudo apt install mpg123"
 
