@@ -214,3 +214,5 @@
 * With another terminal window, run "htop" and see the CPU load (the H3 has 4 CPU cores). Also notice the video smoothness.
 
 * Install the accelerated video players: <b>NOT DONE YET</b>
+ 
+* References: https://github.com/baresip/baresip/issues/2241 , https://forum.armbian.com/topic/17187-understanding-hardware-accelerated-video-decoding/ , vainfo , libva , ffmpeg --hwaccels , libvdpau1 , vdpauinfo
