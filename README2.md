@@ -215,4 +215,4 @@
 
 * Install the accelerated video players: <b>NOT DONE YET</b>
  
-* References: https://github.com/baresip/baresip/issues/2241 , https://forum.armbian.com/topic/17187-understanding-hardware-accelerated-video-decoding/ , vainfo , libva , ffmpeg --hwaccels , libvdpau1 , vdpauinfo
+* References: https://github.com/baresip/baresip/issues/2241 , https://forum.armbian.com/topic/17187-understanding-hardware-accelerated-video-decoding/ , vainfo , libva ,  , libvdpau1 , vdpauinfo
