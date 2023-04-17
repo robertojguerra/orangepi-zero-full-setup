@@ -196,6 +196,8 @@
 * Test with a MIDI file: _aplaymidi yourmidifile.midi_
 
 * Test with an MP3 file: _mpg123 yourmp3file.mp3_
+ 
+* References: https://forum.armbian.com/topic/7216-orange-pi-zero-problem-with-onboard-soundcard/#comment-58239
 
 <h1>11. Install and test H264 video codec hardware acceleration</h1>
 
