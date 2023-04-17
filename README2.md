@@ -198,6 +198,8 @@
 * Test with an MP3 file: _mpg123 yourmp3file.mp3_
  
 * References: https://forum.armbian.com/topic/7216-orange-pi-zero-problem-with-onboard-soundcard/#comment-58239
+ 
+ * https://trac.ffmpeg.org/wiki/Capture/ALSA , https://dev.to/ethand91/how-to-record-webcam-video-and-audio-using-ffmpeg-419c , https://www.baeldung.com/linux/ffmpeg-webcam-stream-video
 
 <h1>11. Install and test H264 video codec hardware acceleration</h1>
 
